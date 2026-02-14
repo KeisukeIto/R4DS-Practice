@@ -16,3 +16,11 @@ ggplot(
 ) +
   geom_point()
 
+### 1.2.4 Adding aesthetics and layers ------------------------------
+
+
+ggplot(
+  data = penguins,
+  mapping = aes(x = flipper_length_mm, y = body_mass_g, color = species)
+) +
+  geom_point()
